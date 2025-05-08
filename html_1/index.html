@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FashionX</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FashionX - Home</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="home">
     <header>
-        <h1>Men's Clothing</h1>
-        <p>Your destination for trendy and affordable men's fashion.</p>
-        <link rel="stylesheet" href="styles.css">
+        <h1>FashionX</h1>
+        <p>Your destination for any piece you can think of.</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html" title="Home Page">Home</a></li>
-            <li><a href="second.html" title="View Products">Products</a></li>
+            <li><a href="products.html" title="View Products">Products</a></li>
             <li><a href="about.html" title="Learn About Us">About</a></li>
             <li><a href="contact.html" title="Contact Us">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <div id="featured" class="section" style="padding: 10px;">
-            <h2>Featured Item</h2>
-            <img src="shirt.jpg" alt="Stylish Shirt" width="300" height="400" loading="lazy">
-            <p>This season’s must-have item. Available now!</p>
-            <a href="products.html" target="_blank" rel="noopener">Shop Now</a>
-        </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Discover Your Style</h2>
+            <p>Trendy, affordable, and hand-picked fashion.</p>
+            <a href="products.html" class="cta-button">Start Shopping</a>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <h2>Featured Items</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/shirt.jpg" alt="Stylish Shirt" />
+                    <p>Stylish Shirt - $25</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/jeans.jpg" alt="Slim Fit Jeans" />
+                    <p>Slim Fit Jeans - $40</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/shoes.jpg" alt="Classic Sneakers" />
+                    <p>Classic Sneakers - $60</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-links">
+                <a href="#">T-Shirts</a>
+                <a href="#">Pants</a>
+                <a href="#">Shoes</a>
+                <a href="#">Accessories</a>
+            </div>
+        </section>
+
+        <!-- About Teaser -->
+        <section class="about-teaser">
+            <h2>About FashionX</h2>
+            <p>We believe fashion should be simple, stylish, and affordable. Learn more about our story and values.</p>
+            <a href="about.html">Learn More</a>
+        </section>
     </main>
 
     <footer>
